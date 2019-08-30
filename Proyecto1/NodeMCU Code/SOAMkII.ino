@@ -43,7 +43,7 @@ int getDistanceFirstSensor() {
   duration = pulseIn(echoPin, HIGH);
   
   // Calculating the distance
-  distance = duration * 0.034/2;
+  distance = (duration * 0.034) / 2;
 
   return distance;
 }
@@ -66,7 +66,7 @@ int getDistanceSecondSensor() {
   duration = pulseIn(echoPin2, HIGH);
   
   // Calculating the distance
-  distance = duration * 0.034/2;
+  distance = (duration * 0.034) / 2;
 
   return distance;
 }
